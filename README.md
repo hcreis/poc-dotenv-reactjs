@@ -1,3 +1,13 @@
+# Docker Build Commad
+docker build --build-arg="REACT_APP_NOT_SECRET_CODE=$NOT_SECRET_CODE" -t hello .
+
+# Docker Run Command
+docker run --name hello -d -p 3001:3000 hello
+
+# Important Thing
+$NOT_SECRET_CODE should be an system environment variable
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
