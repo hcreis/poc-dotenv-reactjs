@@ -15,7 +15,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docker": "docker build -t hello . && docker run --name hello -d -p 3001:3000 hello",
+    "docker-rm": "docker stop hello && docker rm hello && docker image rm hello"
   },
   "eslintConfig": {
     "extends": [

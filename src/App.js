@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   console.log("aaa: ", process.env);
   console.log("bbb: ", process.env.REACT_APP_NOT_SECRET_CODE);
+  console.log("ccc: ", process.env.REACT_APP_JAVA_HOME);
   return (
     <div className="App">
       <header className="App-header">
