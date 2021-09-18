@@ -1,0 +1,8 @@
+FROM node:latest
+WORKDIR /app
+ARG REACT_APP_NOT_SECRET_CODE
+ENV REACT_APP_NOT_SECRET_CODE=$REACT_APP_NOT_SECRET_CODE
+COPY package.json ./
+RUN npm install
+COPY . .
+CMD ["npm", "start"]
