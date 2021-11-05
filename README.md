@@ -1,8 +1,5 @@
 # Docker Build Commad
-docker build --build-arg="REACT_APP_NOT_SECRET_CODE=$NOT_SECRET_CODE" -t hello .
-
-# Docker Run Command
-docker run --name hello -d -p 3001:3000 hello
+docker-compose up -d
 
 # Important Thing
 $NOT_SECRET_CODE should be an system environment variable
